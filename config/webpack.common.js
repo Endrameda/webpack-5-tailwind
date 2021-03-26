@@ -9,7 +9,7 @@ const autoprefixer = require('autoprefixer') // help tailwindcss to work
 
 module.exports = {
     // Where webpack looks to start building the bundle
-    entry: [paths.src + '/index.js'],
+    entry: [`${paths.src}/index.js`, `${paths.src}/styles/index.scss`],
 
     // Where webpack outputs the assets and bundles
     output: {
